@@ -1,6 +1,6 @@
 // TODO: Add here the function to validate
 const isGamerTag = (gamerTag) => {
-    if (gamerTag === undefined) return false;
+    if (!gamerTag) return false;
     return true;
 }
 

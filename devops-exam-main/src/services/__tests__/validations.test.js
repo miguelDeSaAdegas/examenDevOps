@@ -21,7 +21,12 @@ describe("validations tests suites - isEmpty", () => {
 
 describe("validation tests suites - isGamerTag", () => {
     test("should return true as gamerTag is empty", () => {
-        const result = isGamerTag("");
+        const result = isGamerTag();
+        expect(result).toBe(false);
+    });
+
+    test("should return true for a gamerTag of 8 character", () => {
+        const result = isGamerTag("abcdefgh");
         expect(result).toBe(true);
-    })
+    });
 })
